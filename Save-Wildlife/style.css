@@ -29,11 +29,15 @@ nav,
 #credits {
   background-color: black;
   height: 60px;
-  /* Your code goes here */
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   /* Your code goes here */
 }
 
