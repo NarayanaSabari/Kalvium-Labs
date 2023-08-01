@@ -1,7 +1,5 @@
 # Kalvium Lab Codes
 
-![Kalvium Lab](https://example.com/kalvium-lab-logo.png)
-
 This repository contains all the code projects and experiments conducted within Kalvium Lab. 
 
 ## Usage
