@@ -14,14 +14,14 @@
   </head>
   <body>
     <nav>
-      <div class="logo"><img src="img/cricpro-logo.jpeg" alt="logo" /></div>
+      <div class="logo"><img src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-logo.JPG" alt="logo" /></div>
     </nav>
     <span class="heading">ICC World Cup 2011</span>
     <span class="sub-heading">India Vs SriLanka ScoreCard</span>
     <!-- <div class="score"> -->
     <table>
       <tr>
-        <th colspan="5">India Innings</th>
+        <th colspan="5" class="first-cnt">India Innings</th>
         <th colspan="2">277-4(48.2)</th>
       </tr>
       <tr>
@@ -32,8 +32,9 @@
         <td>6s</td>
         <td>SR</td>
       </tr>
+      
       <tr>
-        <td><a href="">Virender Sehwag</a></td>
+        <td class="players" id="Virender Sehwag" onclick="uploading('sehwag')">Virender Sehwag</td>
         <td class="nd">Ibw b L Malinga</td>
         <td>0</td>
         <td>2</td>
@@ -42,7 +43,7 @@
         <td>0.00</td>
       </tr>
       <tr>
-        <td><a href="">Sachin Tendulkar</a></td>
+        <td class="players" id="Sachin Tendulkar" onclick="uploading('sachin')">Sachin Tendulkar</td>
         <td class="nd">c K Sangakkara b L Malinga</td>
         <td>18</td>
         <td>14</td>
@@ -51,7 +52,7 @@
         <td>128.57</td>
       </tr>
       <tr>
-        <td><a href="">Gautam Gambhir</a></td>
+        <td class="players" id="Gautam Gambhir" onclick="uploading('gambhir')">Gautam Gambhir</td>
         <td class="nd">b T Perera</td>
         <td>97</td>
         <td>122</td>
@@ -60,7 +61,7 @@
         <td>79.51</td>
       </tr>
       <tr>
-        <td><a href="">Virat Kohli</a></td>
+        <td class="players" id="Virat Kohli" onclick="uploading('virat Kohli')">Virat Kohli</td>
         <td class="nd">c & b T Dilshan</td>
         <td>35</td>
         <td>49</td>
@@ -69,7 +70,7 @@
         <td>71.43</td>
       </tr>
       <tr>
-        <td><a href="">MS Dhoni (c & wk)</a></td>
+        <td class="players" id="MS Dhoni" onclick="uploading('dhoni')">MS Dhoni (c & wk)</td>
         <td class="nd">not out</td>
         <td>91</td>
         <td>79</td>
@@ -78,7 +79,7 @@
         <td>115.10</td>
       </tr>
       <tr>
-        <td><a href=""> Yuvraj Singh </a></td>
+        <td class="players" id="Yuvraj Singh" onclick="uploading('yuvraj')">Yuvraj Singh</td>
         <td class="nd">not out</td>
         <td>21</td>
         <td>24</td>
@@ -95,16 +96,22 @@
         <tf colspan="5">277 (4 wkts, 48.2 Ov)</td>
       </tr>
       <tr>
-        <td>Did not bat</td>
+        <td>Did not bat </td>
         <td colspan="6">
-          <a href=""
-            >Suresh Raina, Harbhajan Singh, Zaheer Khan, Munaf Patel, S
-            Sreesanth</a
-          >
+            <span class="players" id="Suresh Raina" onclick="uploading('suresh Raina')">Suresh Raina,</span>
+            <span class="players" id="Harbhajan Singh" onclick="uploading('harbhajan')">Harbhajan Singh,</span>
+            <span class="players" id="Zaheer Khan" onclick="uploading('zaheer Khan')">Zaheer Khan,</span>
+            <span class="players" id="Munaf Patel" onclick="uploading('munaf')" >Munaf Patel,</span>
+            <span class="players" id="S Sreesanth" onclick="uploading('sreeshanth')">S Sreesanth</span>
         </td>
       </tr>
     </table>
+    <div class="container">
+        <div class="close-btn" onclick="closing()">&times;</div>
+        <div><img src="" alt="error" class="pop"></div>
+    </div>
     <!-- </div> -->
     <footer class="footer">Made with ♥️ by Kalvian</footer>
   </body>
+  <script src="script.js"></script>
 </html>
