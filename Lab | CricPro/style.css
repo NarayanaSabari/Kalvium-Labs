@@ -1,0 +1,71 @@
+body {
+  background-image: url(img/cricpro-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position-y: 200px;
+  background-position-x: right;
+  /* background-position-y: -100%; */
+  padding: 5px;
+  margin-left: 70px;
+  /* background-attachment: fixed; */
+  font-family: "Nunito Sans", sans-serif;
+}
+footer {
+  margin-top: 30px;
+}
+a {
+  color: #4d93f0;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.heading {
+  font-size: 50px;
+  display: block;
+  font-weight: bold;
+  text-shadow: 0px 3px 3px gray;
+}
+.sub-heading {
+  font-size: 25px;
+  color: gray;
+  display: block;
+  font-weight: bold;
+}
+table {
+  border: 0px solid;
+  background-color: white;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 10px;
+  padding-left: 20px;
+  border: 0px solid;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+th {
+  background-color: #f05033;
+  color: white;
+}
+th:first-child,
+td:first-child,
+td:nth-child(2) {
+  text-align: left;
+}
+/* td:nth-child(2) {
+  padding-right: 40px;
+} */
+.nd {
+  color: gray !important;
+}
