@@ -4,9 +4,13 @@ body {
   justify-content: center;
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
   place-items: center;
+  row-gap: 4px;
 }
 img {
   height: 350px;
   width: 350px;
   padding: 10px;
+}
+div {
+  border: 2px solid black;
 }
