@@ -3,7 +3,6 @@ body {
   align-items: center;
   justify-content: center;
   grid-template-columns: auto auto auto;
-  /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
   place-items: center;
   row-gap: 4px;
 }
