@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.border {
+  border: 2px solid #d8d8d8;
+  border-radius: 5px;
+  margin: 10px;
+}
+.overall {
+  display: grid;
+  grid-template-areas: "hero score villain";
+  justify-content: space-evenly;
+}
+.hero-section {
+  grid-area: hero;
+}
+.score-section {
+  grid-area: score;
+}
+.villain-section {
+  grid-area: villain;
+}
+.avatar {
+  object-fit: contain;
+}
+
+.score-section {
+  font-size: 50px;
+}
+.power {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 687px) {
+  .flex {
+    flex-direction: column;
+  }
+}
