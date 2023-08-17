@@ -26,6 +26,6 @@ function editList(index) {
 }
 
 function removeIndex(index) {
-  arr.pop(index);
+  arr.splice(index, 1);
   appendList();
 }
