@@ -50,34 +50,40 @@ const getRandomStrength = () => {
 // Build player template
 const buildPlayers = (players, type) => {
   let fragment = "";
+  // filter players starts from here
   const hero = players.filter(function (obj) {
     return obj.type === "hero";
   });
   const villain = players.filter(function (obj) {
     return obj.type === "villain";
   });
-  // Instead of using for loop
-  // Use chaining of Array methods - filter, map and join
-  // Type your code here
+  // filter players ends from here
+
   if (type === "hero") {
+    // creating a innerHTML array of each player
     var x = hero.map(function (players, i) {
       let frag = `<div class="player">
       <img src="${players.image}" alt="">
       <div class="name">${players.name}</div>
       <div class="strength">${players.strength}</div>
     </div>`;
+      // returning each innerHTML to frag
       return frag;
     });
+    // Joining all the elements in frag into string
     fragment = x.join(" ");
   } else {
+    // creating a innerHTML array of each player
     var x = villain.map(function (players, i) {
       let frag = `<div class="player">
       <img src="${players.image}" alt="">
       <div class="name">${players.name}</div>
       <div class="strength">${players.strength}</div>
     </div>`;
+      // returning each innerHTML to frag
       return frag;
     });
+    // Joining all the elements in frag into string
     fragment = x.join(" ");
   }
   return fragment;
