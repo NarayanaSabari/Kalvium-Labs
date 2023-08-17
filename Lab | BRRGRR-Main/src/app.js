@@ -113,18 +113,109 @@ document.querySelector(".btn-lettuce").onclick = function () {
 };
 
 //Challenge 1 - Add/Remove the class active to the buttons based on state
-let patty = document.querySelector("#patty");
-let cheese = document.getElementById("cheese");
-let tomato = document.querySelector("#tomato");
-let onion = document.querySelector("#onion");
-let lettuce = document.querySelector("#lettuce");
+function renderButtons() {
+  document.querySelector(".btn-patty").addEventListener("click", () => {
+    if (!state.Patty) {
+      document.querySelector(".btn-patty").classList.remove("active");
+    } else {
+      document.querySelector(".btn-patty").classList.add("active");
+    }
+  });
 
-for (const key in state) {
-  console.log(`${key}: ${state[key]}`);
+  document.querySelector(".btn-cheese").addEventListener("click", () => {
+    if (!state.Cheese) {
+      document.querySelector(".btn-cheese").classList.remove("active");
+    } else {
+      document.querySelector(".btn-cheese").classList.add("active");
+    }
+  });
+
+  document.querySelector(".btn-tomatoes").addEventListener("click", () => {
+    if (!state.Tomatoes) {
+      document.querySelector(".btn-tomatoes").classList.remove("active");
+    } else {
+      document.querySelector(".btn-tomatoes").classList.add("active");
+    }
+  });
+
+  document.querySelector(".btn-onions").addEventListener("click", () => {
+    if (!state.Onions) {
+      document.querySelector(".btn-onions").classList.remove("active");
+    } else {
+      document.querySelector(".btn-onions").classList.add("active");
+    }
+  });
+
+  document.querySelector(".btn-lettuce").addEventListener("click", () => {
+    if (!state.Lettuce) {
+      document.querySelector(".btn-lettuce").classList.remove("active");
+    } else {
+      document.querySelector(".btn-lettuce").classList.add("active");
+    }
+  });
 }
-
 //Challenge 2 - Render only the items selected in the ingredients board based on the state
+
+const list = document.querySelectorAll(".items");
+var total = 170;
+
+document.querySelector(".btn-patty").addEventListener("click", () => {
+  if (!state.Patty) {
+    list[0].style.display = "none";
+    total = total - ingredients[list[0].textContent];
+  } else {
+    list[0].style.display = "block";
+    total = total + ingredients[list[0].textContent];
+  }
+});
+
+document.querySelector(".btn-cheese").addEventListener("click", () => {
+  if (!state.Cheese) {
+    list[1].style.display = "none";
+    total = total - ingredients[list[1].textContent];
+  } else {
+    list[1].style.display = "block";
+    total = total + ingredients[list[1].textContent];
+  }
+});
+
+document.querySelector(".btn-tomatoes").addEventListener("click", () => {
+  if (!state.Tomatoes) {
+    list[2].style.display = "none";
+    total = total - ingredients[list[2].textContent];
+  } else {
+    list[2].style.display = "block";
+    total = total + ingredients[list[2].textContent];
+  }
+});
+
+document.querySelector(".btn-onions").addEventListener("click", () => {
+  if (!state.Onions) {
+    list[3].style.display = "none";
+    total = total - ingredients[list[3].textContent];
+  } else {
+    list[3].style.display = "block";
+    total = total + ingredients[list[3].textContent];
+  }
+});
+
+document.querySelector(".btn-lettuce").addEventListener("click", () => {
+  if (!state.Lettuce) {
+    list[4].style.display = "none";
+    total = total - ingredients[list[4].textContent];
+  } else {
+    list[4].style.display = "block";
+    total = total + ingredients[list[4].textContent];
+  }
+});
 
 //Judgement 1
 //In the p element having price-details as the class, display the calculated
 //price based on ingredients
+
+const button = document.querySelectorAll(".button");
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", () => {
+    document.querySelector(".price-details").innerText = "INR " + total;
+  });
+}
