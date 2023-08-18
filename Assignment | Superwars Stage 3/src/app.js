@@ -44,7 +44,7 @@ const initPlayers = (players) => {
 
 // getting random strength
 const getRandomStrength = () => {
-  return Math.ceil(Math.random() * 100);
+  return Math.floor(Math.random() * 100) + 1;
 };
 
 // Build player template
@@ -61,7 +61,7 @@ const buildPlayers = (players, type) => {
 
   if (type === "hero") {
     // creating a innerHTML array of each player
-    var x = hero.map(function (players, i) {
+    var x = hero.map(function (players) {
       let frag = `<div class="player">
       <img src="${players.image}" alt="">
       <div class="name">${players.name}</div>
@@ -74,7 +74,7 @@ const buildPlayers = (players, type) => {
     fragment = x.join(" ");
   } else {
     // creating a innerHTML array of each player
-    var x = villain.map(function (players, i) {
+    var x = villain.map(function (players) {
       let frag = `<div class="player">
       <img src="${players.image}" alt="">
       <div class="name">${players.name}</div>

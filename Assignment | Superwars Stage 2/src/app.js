@@ -77,7 +77,6 @@ const buildPlayers = (players, type) => {
       fragment += frag;
     }
   }
-  console.log(fragment);
   return fragment;
 };
 // Display players in HTML
