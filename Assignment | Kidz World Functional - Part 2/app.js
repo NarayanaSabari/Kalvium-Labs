@@ -1,6 +1,8 @@
 var cart = [];
 var total = 0;
 var quantity = 0;
+var url = `https://wa.me/919012345678?text=Order details This was our `;
+
 function render(cart) {
   var cart = document.getElementById("cart-value");
   cart.innerText = quantity;
@@ -35,6 +37,7 @@ function printCart(cart) {
   cart.forEach(function (item) {
     console.log(`Item name: ${item.name} - Quantity: ${item.quantity}`);
     total += item.price * item.quantity;
+    url += `${item.name} ${item.quantity} `;
   });
 
   printTotal(total);
@@ -44,4 +47,7 @@ function printTotal(total) {
   var doller = Math.floor(total);
   var cent = Math.floor((total - doller) * 100);
   console.log(`the total amount is ${doller}$ and ${cent} cents`);
+}
+function new_tab() {
+  window.open(url, "_blank");
 }
