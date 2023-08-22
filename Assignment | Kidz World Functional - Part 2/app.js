@@ -39,7 +39,6 @@ function printCart(cart) {
     total += item.price * item.quantity;
     url += `${item.name} ${item.quantity} `;
   });
-
   printTotal(total);
 }
 
