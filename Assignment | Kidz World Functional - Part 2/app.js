@@ -46,8 +46,10 @@ function printCart(cart) {
 function printTotal(total) {
   var doller = Math.floor(total);
   var cent = Math.floor((total - doller) * 100);
+  url += `Total price:$${doller} ${cent}c`;
   console.log(`the total amount is ${doller}$ and ${cent} cents`);
 }
+
 function new_tab() {
   window.open(url, "_blank");
 }
