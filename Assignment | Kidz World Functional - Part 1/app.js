@@ -1,10 +1,20 @@
 var cart = [];
 var total = 0;
 var quantity = 0;
+
+document.getElementById("cart").addEventListener("click", () => {
+  cart.forEach(function (item) {
+    console.log(`Item name: ${item.name} - Quantity: ${item.quantity}`);
+    total += item.price * item.quantity;
+  });
+  printTotal(total);
+});
+
 function render(cart) {
   var cart = document.getElementById("cart-value");
   cart.innerText = quantity;
 }
+
 function addToCart(target) {
   // getting the grand parent element
   var closest = target.closest("div[id]");
@@ -29,15 +39,6 @@ function addToCart(target) {
     cart[index].quantity++;
   }
   render(cart);
-}
-
-function printCart(cart) {
-  cart.forEach(function (item) {
-    console.log(`Item name: ${item.name} - Quantity: ${item.quantity}`);
-    total += item.price * item.quantity;
-  });
-
-  printTotal(total);
 }
 
 function printTotal(total) {
