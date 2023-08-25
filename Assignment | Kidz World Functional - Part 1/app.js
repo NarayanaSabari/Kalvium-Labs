@@ -15,6 +15,20 @@ function render(cart) {
   cart.innerText = quantity;
 }
 
+const btn_cart = document.getElementsByClassName("addToCart");
+
+for (let i = 0; i < btn_cart.length; i++) {
+  btn_cart[i].addEventListener("click", () => {
+    addToCart(btn_cart[i]);
+  });
+}
+
+// btn_cart.forEach((element)=>{
+//   element.addEventListener("click",()=>{
+//     console.log(element)
+//   })
+// })
+
 function addToCart(target) {
   // getting the grand parent element
   var closest = target.closest("div[id]");
