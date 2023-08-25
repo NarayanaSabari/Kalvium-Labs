@@ -33,6 +33,7 @@ h1 {
   flex-direction: column;
 }
 .box {
+  position: relative;
   height: 100px;
   width: 100px;
   margin: 5px;
@@ -86,6 +87,16 @@ h3 {
 
 a {
   color: white;
+}
+h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: #fab201;
+  font-weight: 900;
+  -webkit-text-stroke: 5px white;
 }
 
 @media (max-width: 600px) {
