@@ -4,6 +4,7 @@ let lives = 4;
 let time = 60;
 let zombiID = 0;
 let zombi;
+let width = 100;
 
 // Iteration 1.2: Add shotgun sound
 let short_gun_sound = new Audio("assets/shotgun.wav");
@@ -17,6 +18,11 @@ game_body.onclick = () => {
 let background_music = new Audio("assets/bgm.mp3");
 background_music.play();
 background_music.loop = true;
+
+// Helper function to generate unique numbers
+function generate_unique_number(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 // Iteration 2: Write a function to make a zombie
 function generate_zombie() {
@@ -33,6 +39,8 @@ function generate_zombie() {
 function escape_zombie(zombi) {
   if (zombi.getBoundingClientRect().top <= 0) {
     lives--;
+    width -= 25;
+    document.getElementById("lives").style.width = `${width}%`;
     destroy_zombie(zombi);
   }
 }
@@ -46,7 +54,6 @@ function destroy_zombie(zombi) {
 
 // Iteration 5: Creating timer
 setInterval(timer, 1000);
-
 function timer() {
   if (time < 0 || lives <= 0) {
     location.href = lives <= 0 ? "game-over.html" : "win.html";
@@ -56,11 +63,6 @@ function timer() {
     timerElement.innerHTML = time;
     escape_zombie(zombi);
   }
-}
-
-// Helper function to generate unique numbers
-function generate_unique_number(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 // Iteration 6: Write a code to start the game by calling the first zombie
