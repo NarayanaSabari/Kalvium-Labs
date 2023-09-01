@@ -10,9 +10,21 @@ def flames_relationship(names):
         'S': "Siblings"
     }
 
+    # Convert names to lowercase and remove spaces
+    names = names.lower().replace(" ", "")
+
     # Calculate the relationship by eliminating letters from FLAMES
-    index = len(names) % len(flames_word) - 1
-    relationship = flames_word[index]
+    while len(flames_word) > 1:
+        index = len(names) % len(flames_word) - 1
+        if index == -1:
+            flames_word.pop(index)
+        else:
+            flames_word.pop(index)
+            flames_word = flames_word[index:]+flames_word[:index]
+
+    # The remaining letter in flames_word corresponds to the relationship
+    relationship = flames_word[0]
+
     return meanings[relationship]
 
 
