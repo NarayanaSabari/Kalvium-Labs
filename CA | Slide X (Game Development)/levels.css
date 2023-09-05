@@ -3,7 +3,6 @@
   padding: 10px 70px;
   margin: 150px 0 70px;
 }
-
 .levels {
   margin: 15px;
   font-size: 25px;
@@ -11,16 +10,30 @@
   border-radius: 20px;
   width: 250px;
 }
-
 /* Game Point Styling */
 #game_point {
   padding: 20px;
 }
-
 #game_point input {
   margin: 30px;
   border-radius: 25px;
   padding: 7px;
   width: 250px;
   font-size: x-large;
+}
+/* For Tablet */
+@media screen and (max-width: 768px) {
+  #collector {
+    padding: 10px 30px;
+    margin: 70px 0 70px;
+  }
+}
+/* For Mobile */
+@media screen and (max-width: 425px) {
+  #level_selector {
+    display: block;
+  }
+  #game_point {
+    display: none;
+  }
 }

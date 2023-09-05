@@ -25,12 +25,19 @@ body {
 #score span {
   padding: 0 50% 0;
 }
-/* Slider Styling */
-#slider1 {
-  left: 50px;
-  top: 50%; /* change this alone in js */
-}
-#slider2 {
-  top: 15%; /* change this alone in js */
-  right: 50px;
+
+/* For Tablet */
+@media screen and (max-width: 768px) {
+  #game {
+    display: flex;
+    height: 100%;
+  }
+  body {
+    height: 100vh;
+  }
+  #boxes {
+    flex-direction: row;
+    align-self: center;
+    overflow: hidden;
+  }
 }

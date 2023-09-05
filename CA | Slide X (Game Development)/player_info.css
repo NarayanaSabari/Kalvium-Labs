@@ -1,6 +1,5 @@
 #collector {
   padding: 10px 70px;
-
   margin: 150px 0 70px;
 }
 
@@ -22,4 +21,36 @@
   padding: 10px;
   width: 250px;
   font-size: xx-large;
+}
+/* For Tablet */
+@media screen and (max-width: 768px) {
+  #collector {
+    padding: 10px 30px;
+    margin: 70px 0 70px;
+  }
+  .players {
+    padding: 5px 15px;
+  }
+  .players h2 {
+    font-size: 25px;
+  }
+  .inputs {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .inputs input {
+    padding: 5px;
+    width: 150px;
+    font-size: large;
+  }
+}
+/* For Mobile */
+@media screen and (max-width: 425px) {
+  #player1 {
+    display: block;
+  }
+  /* change the display value once the next is checked  */
+  #player2 {
+    display: none;
+  }
 }

@@ -20,3 +20,16 @@
   height: 50px;
   width: auto;
 }
+/* For Tablet */
+@media screen and (max-width: 768px) {
+  #theam_selector {
+    padding: 150px 0 0;
+  }
+}
+/* for Mobile */
+@media screen and (max-width: 425px) {
+  #theam_box {
+    margin: 20px;
+    padding: 70px 120px;
+  }
+}

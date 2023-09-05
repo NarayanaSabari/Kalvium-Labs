@@ -18,24 +18,28 @@ body {
   background-color: black;
 }
 /* Color Coding */
-.text_color {
-  color: black;
-}
-.text_color_samebg {
-  color: white;
-}
 .text_bgcolor {
   background-color: white;
 }
+.text_color {
+  color: black;
+}
+/* box color */
+.box_color {
+  background-color: white;
+}
+
+/* text color for the body bg color */
+.text_color_samebg {
+  color: white;
+}
 .border_color {
-  border: 5px;
-  border-style: solid;
+  border: 5px solid;
   border-color: white;
   border-radius: 30px;
 }
 /* Placeholder color */
 ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
   color: gray;
   text-align: center;
 }
@@ -69,13 +73,13 @@ body {
 }
 
 /* Left Slider Styling */
-#left {
-  left: 50px;
+#slider1 {
   bottom: 150px;
+  left: 50px;
 }
 
 /* Right Slider Styling */
-#right {
+#slider2 {
   top: 150px;
   right: 50px;
 }
@@ -98,3 +102,35 @@ body {
 #restart_btn {
   margin: 70px 0 70px;
 }
+/* For Tablet */
+@media screen and (max-width: 768px) {
+  /* Title Styling */
+  #title {
+    font-size: 70px;
+    padding-top: 140px;
+  }
+  /* Slider Styling */
+  .slider {
+    padding: 10px 60px;
+  }
+
+  /* Left Slider Styling */
+  #slider1 {
+    left: 150px;
+    bottom: 50px;
+  }
+
+  /* Right Slider Styling */
+  #slider2 {
+    top: 50px;
+    right: 150px;
+  }
+  /* Start Button Styling */
+  #start_btn,
+  #restart_btn {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+
+/* For Mobile */
