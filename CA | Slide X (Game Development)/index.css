@@ -1,24 +1,17 @@
 /* Theme Selector Styling */
 #box {
-  display: flex;
   align-items: center;
 }
 
 #theam_selector {
   padding: 200px 0 0;
-  display: flex;
-  justify-content: center;
 }
 
 /* Theme Box Styling */
 #theam_box {
   margin: 50px;
-  border: 5px solid white;
-  border-radius: 30px;
   padding: 100px 200px;
 }
-
-
 
 /* Arrow Styling */
 .right_arrow > img,

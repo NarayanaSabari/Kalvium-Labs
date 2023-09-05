@@ -3,18 +3,14 @@ body {
 }
 /* Boxes Container Styling */
 #boxes {
-  display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Individual Box Styling */
 .box {
-  height: max-content;
-  width: max-content;
   padding: 10px;
   margin: 10px;
-  background-color: white;
 }
 
 /* Score Styling */
@@ -22,10 +18,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  color: white;
   font-size: 95px;
-  display: flex;
-  justify-content: center;
 }
 
 /* Score Span Styling */
@@ -34,18 +27,10 @@ body {
 }
 /* Slider Styling */
 #slider1 {
-  padding: 60px 10px;
-  background-color: white;
-  position: absolute;
-  border-radius: 5px;
   left: 50px;
   top: 50%; /* change this alone in js */
 }
 #slider2 {
-  padding: 60px 10px;
-  background-color: white;
-  position: absolute;
-  border-radius: 5px;
   top: 15%; /* change this alone in js */
   right: 50px;
 }

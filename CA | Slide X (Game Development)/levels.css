@@ -1,37 +1,20 @@
 /* Collector Styling */
 #collector {
-  border: 5px solid white;
   padding: 10px 70px;
-  border-radius: 30px;
   margin: 150px 0 70px;
-}
-
-/* Level Selector Styling */
-#level_selector {
-  color: white;
 }
 
 .levels {
   margin: 15px;
   font-size: 25px;
   padding: 10px;
-  background-color: white;
-  color: black;
   border-radius: 20px;
   width: 250px;
-}
-
-/* Divider Line Styling */
-.line {
-  background-color: white;
-  padding: 7px;
-  border-radius: 10px;
 }
 
 /* Game Point Styling */
 #game_point {
   padding: 20px;
-  color: white;
 }
 
 #game_point input {

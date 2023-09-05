@@ -1,13 +1,6 @@
-/* Player Info Styling */
-.players h2,
-.players h4 {
-  color: white;
-}
-
 #collector {
-  border: 5px solid white;
   padding: 10px 70px;
-  border-radius: 30px;
+
   margin: 150px 0 70px;
 }
 
