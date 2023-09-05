@@ -1,15 +1,6 @@
-/* Reset Margin and Padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Body Styling */
 body {
-  background-color: black;
   overflow: hidden;
 }
-
 /* Boxes Container Styling */
 #boxes {
   display: flex;

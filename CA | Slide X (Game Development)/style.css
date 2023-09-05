@@ -1,0 +1,78 @@
+/* Font Definitions */
+@font-face {
+  font-family: "ShadowHand";
+  src: url("//2ttf.com/webfont/UIswCwhB/webfont.ttf") format("truetype");
+}
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+
+/* Reset Margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Body Styling */
+body {
+  background-color: black;
+}
+
+/* Title Styling */
+#title {
+  font-family: "ShadowHand";
+  color: white;
+  font-size: 130px;
+  text-align: center;
+  padding-top: 140px;
+}
+
+/* Slider Styling */
+.slider {
+  padding: 60px 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* Left Slider Styling */
+#left {
+  left: 50px;
+  bottom: 150px;
+}
+
+/* Right Slider Styling */
+#right {
+  top: 150px;
+  right: 50px;
+}
+/* Flex Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+/* Text align Classes */
+.text-cen {
+  text-align: center;
+}
+/* Start Button Styling */
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+#start_btn,
+#restart_btn {
+  color: black;
+  background-color: white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 40px;
+  font-family: "Yatra One", cursive;
+}
+#restart_btn {
+  margin: 70px 0 70px;
+}

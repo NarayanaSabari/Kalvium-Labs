@@ -1,66 +1,7 @@
-/* Font Definitions */
-@font-face {
-  font-family: "ShadowHand";
-  src: url("//2ttf.com/webfont/UIswCwhB/webfont.ttf") format("truetype");
-}
-
-/* Import Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
-
-/* Reset Margin and Padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Body Styling */
-body {
-  background-color: #000;
-}
-
-/* Title Styling */
-#title {
-  font-family: "ShadowHand";
-  color: white;
-  font-size: 130px;
-  text-align: center;
-  padding-top: 140px;
-}
-
-/* Slider Styling */
-.slider {
-  padding: 60px 10px;
-  background-color: white;
-  position: absolute;
-  border-radius: 5px;
-}
-
-/* Left Slider Styling */
-#left {
-  left: 50px;
-  bottom: 150px;
-}
-
-/* Right Slider Styling */
-#right {
-  top: 150px;
-  right: 50px;
-}
-
-/* Flex Utility Classes */
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  justify-content: center;
-}
-
 /* Collector Styling */
 #collector {
   border: 5px solid white;
   padding: 10px 70px;
-  display: flex;
   border-radius: 30px;
   margin: 150px 0 70px;
 }
@@ -68,7 +9,6 @@ body {
 /* Level Selector Styling */
 #level_selector {
   color: white;
-  text-align: center;
 }
 
 .levels {
@@ -91,7 +31,6 @@ body {
 /* Game Point Styling */
 #game_point {
   padding: 20px;
-  text-align: center;
   color: white;
 }
 
@@ -101,20 +40,4 @@ body {
   padding: 7px;
   width: 250px;
   font-size: x-large;
-}
-
-/* Start Button Styling */
-#button {
-  display: flex;
-  justify-content: center;
-}
-
-#start_btn {
-  color: black;
-  background-color: white;
-  margin: 0 0 20px;
-  font-size: 40px;
-  padding: 20px;
-  border-radius: 40px;
-  font-family: "Yatra One", cursive;
 }
