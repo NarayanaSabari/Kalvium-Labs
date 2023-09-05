@@ -1,6 +1,6 @@
 # Kalvium Lab Codes
 
-This repository contains all the code projects and experiments conducted within Kalvium Lab.
+This repository contains all the code projects and experiments conducted within Kalvium.
 
 ## Usage
 https://narayanasabari.github.io/Kalvium-Labs/
