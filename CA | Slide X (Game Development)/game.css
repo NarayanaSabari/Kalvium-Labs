@@ -1,0 +1,60 @@
+/* Reset Margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Boxes Container Styling */
+#boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Individual Box Styling */
+.box {
+  height: max-content;
+  width: max-content;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+/* Score Styling */
+#score {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 95px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Score Span Styling */
+#score span {
+  padding: 0 50% 0;
+}
+/* Slider Styling */
+#slider1 {
+  padding: 60px 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  left: 50px;
+  top: 50%; /* change this alone in js */
+}
+#slider2 {
+  padding: 60px 10px;
+  background-color: white;
+  position: absolute;
+  border-radius: 5px;
+  top: 15%; /* change this alone in js */
+  right: 50px;
+}
