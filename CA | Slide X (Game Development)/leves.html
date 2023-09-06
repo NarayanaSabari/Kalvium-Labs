@@ -29,16 +29,25 @@
         </div>
 
         <!-- Game Point Input -->
+        <form id="game_point_reader">
         <div id="game_point" class="text-cen text_color_samebg">
           <h1>Game Point</h1>
-          <input type="text" id="max_point" value="" placeholder="Enter here" />
+          <input
+            type="number"
+            id="max_point"
+            value=""
+            placeholder="Enter here"
+            required
+          />
         </div>
       </div>
     </div>
 
     <!-- Start Button -->
     <div id="button">
-      <div id="start_btn">Start</div>
+      <input id="start_btn" type="submit" value="Submit" " />
     </div>
+  </form>
+    <script src="JS/levles.js"></script>
   </body>
 </html>
