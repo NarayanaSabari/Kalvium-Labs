@@ -39,4 +39,4 @@ function handleLevelSelection(event) {
 
   // Store the selected level in local storage
   localStorage.setItem("selectedLevel", selectedLevelText);
-}
+} 
