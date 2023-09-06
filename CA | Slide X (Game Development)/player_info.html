@@ -18,59 +18,67 @@
     <div id="title">SLIDE X</div>
 
     <!-- Player Info Collector -->
-    <div class="flex flex-center">
-      <div id="collector" class="flex border_color">
-        <!-- Player 1 Info -->
-        <div id="player1" class="players text-cen text_color_samebg">
-          <h2>Player 1</h2>
-          <div class="inputs">
-            <h4>Name</h4>
-            <input
-              type="text"
-              name=""
-              id="player1-name"
-              placeholder="Enter here"
-            />
-          </div>
-          <div class="inputs">
-            <h4>Nick name</h4>
-            <input
-              type="text"
-              name=""
-              id="player1-nickname"
-              placeholder="Enter here"
-            />
-          </div>
-        </div>
+    <form id="player_details">
+      <div class="flex flex-center">
+        <div id="collector" class="flex border_color">
+          <!-- Player 1 Info -->
 
-        <!-- Player 2 Info -->
-        <div id="player2" class="players text-cen text_color_samebg">
-          <h2>Player 2</h2>
-          <div class="inputs">
-            <h4>Name</h4>
-            <input
-              type="text"
-              name=""
-              id="player2-name"
-              placeholder="Enter here"
-            />
+          <div id="player1" class="players text-cen text_color_samebg">
+            <h2>Player 1</h2>
+            <div class="inputs">
+              <h4>Name</h4>
+              <input
+                type="text"
+                name=""
+                id="player1-name"
+                placeholder="Enter here"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <h4>Nick name</h4>
+              <input
+                type="text"
+                name=""
+                id="player1-nickname"
+                placeholder="Enter here"
+                required
+              />
+            </div>
           </div>
-          <div class="inputs">
-            <h4>Nick name</h4>
-            <input
-              type="text"
-              name=""
-              id="player2-nickname"
-              placeholder="Enter here"
-            />
+
+          <!-- Player 2 Info -->
+          <div id="player2" class="players text-cen text_color_samebg">
+            <h2>Player 2</h2>
+            <div class="inputs">
+              <h4>Name</h4>
+              <input
+                type="text"
+                name=""
+                id="player2-name"
+                placeholder="Enter here"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <h4>Nick name</h4>
+              <input
+                type="text"
+                name=""
+                id="player2-nickname"
+                placeholder="Enter here"
+                required
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Start Button -->
-    <div id="button">
-      <div id="start_btn">Next</div>
-    </div>
+      <!-- Start Button -->
+      <div id="button">
+        <input id="start_btn" type="submit" value="Submit" " />
+      </div>
+    </form>
+    <script src="JS/player_info.js"></script>
   </body>
 </html>
