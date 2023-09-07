@@ -7,6 +7,7 @@ body {
   align-items: center;
 }
 /* Pad */
+/* Pad */
 .pad {
   position: absolute;
   height: 10vh;
@@ -14,14 +15,14 @@ body {
   transform: translate(0, -50%);
   background-color: white;
 }
+
 #player1-pad {
-  --player1_position: 50;
-  top: calc(var(--player1_position) * 1vh);
+  top: 50vh; /* Initial position for player 1 paddle */
   left: 1.5vw;
 }
+
 #player2-pad {
-  --player2_position: 50;
-  top: calc(var(--player2_position) * 1vh);
+  top: 50vh; /* Initial position for player 2 paddle */
   right: 1.5vw;
 }
 /* Ball */
