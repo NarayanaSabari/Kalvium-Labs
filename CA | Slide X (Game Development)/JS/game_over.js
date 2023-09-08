@@ -10,6 +10,6 @@ winnerDisplay.textContent = winner;
 // Add a click event listener to the restart button
 document.getElementById("restart_btn").addEventListener("click", () => {
   // Redirect to the "levels.html" page when the restart button is clicked
-  window.location.href = "levels.html";
+  window.location.href = "leves.html";
 });
 
