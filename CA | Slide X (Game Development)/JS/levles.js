@@ -38,5 +38,5 @@ function handleLevelSelection(event) {
   const selectedLevelText = selectedLevel.textContent;
 
   // Store the selected level in local storage
-  localStorage.setItem("selectedLevel", selectedLevelText);
-} 
+  localStorage.setItem("gameLevel", selectedLevelText);
+}

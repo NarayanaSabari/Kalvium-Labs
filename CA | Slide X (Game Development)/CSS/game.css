@@ -1,13 +1,15 @@
+/* Set body overflow to hidden to prevent scrolling */
 body {
   overflow: hidden;
 }
-/* Boxes Container Styling */
+
+/* Styling for the container of boxes */
 #boxes {
   flex-direction: column;
   align-items: center;
 }
-/* Pad */
-/* Pad */
+
+/* Styling for the pads */
 .pad {
   position: absolute;
   height: 10vh;
@@ -16,16 +18,19 @@ body {
   background-color: white;
 }
 
+/* Styling for player 1 pad */
 #player1-pad {
   top: 50vh; /* Initial position for player 1 paddle */
   left: 1.5vw;
 }
 
+/* Styling for player 2 pad */
 #player2-pad {
   top: 50vh; /* Initial position for player 2 paddle */
   right: 1.5vw;
 }
-/* Ball */
+
+/* Styling for the ball */
 #ball {
   --x: 50;
   --y: 50;
@@ -37,45 +42,105 @@ body {
   transform: translate(-50%, -50%);
   background-color: white;
 }
-/* Individual Box Styling */
+
+/* Styling for individual boxes */
 .box {
   padding: 10px;
   margin: 10px;
 }
 
-/* Score Styling */
+/* Styling for the score */
 #score {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   font-size: 95px;
 }
+
+/* Styling for the score elements */
 #score > :first-child {
   border-right: 0.5vh solid;
 }
-/* Score Span Styling */
+
+/* Styling for score span */
 #score span {
   padding: 0 50% 0;
 }
+
+/* Styling for the game */
 #game {
   overflow: hidden;
 }
-/* For Tablet */
+
+/* Hide buttons by default */
+.buttons {
+  visibility: hidden;
+}
+
+/* Media query for tablet screens */
 @media screen and (max-width: 768px) {
+  /* Show buttons and position them for tablet screens */
+  .buttons {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  }
+
+  /* Styling for player 1 button on tablet */
+  #player1_btn {
+    top: 0vh;
+    width: 100vw;
+  }
+
+  /* Styling for player 2 button on tablet */
+  #player2_btn {
+    bottom: 0vh;
+    width: 100vw;
+  }
+
+  /* Adjust pad styling for tablet */
+  .pad {
+    position: absolute;
+    height: 1.5vh;
+    width: 10vh;
+    transform: translate(0, -50%);
+    background-color: white;
+  }
+
+  /* Styling for player 1 pad on tablet */
+  #player1-pad {
+    top: 10vh; /* Initial position for player 1 paddle */
+    left: 50vw;
+  }
+
+  /* Styling for player 2 pad on tablet */
+  #player2-pad {
+    top: 90vh; /* Initial position for player 2 paddle */
+    left: 50vw;
+  }
+
+  /* Adjust game container styling for tablet */
   #game {
     display: flex;
     height: 100%;
     overflow: hidden;
   }
+
+  /* Adjust body styling for tablet */
   body {
     height: 100vh;
     overflow: hidden;
   }
+
+  /* Adjust box container styling for tablet */
   #boxes {
     flex-direction: row;
     align-self: center;
     overflow: hidden;
   }
+
+  /* Adjust score styling for tablet */
   #score {
     right: 2%;
     top: 50%;
@@ -83,10 +148,19 @@ body {
     flex-direction: column;
     padding: 10px;
   }
+
+  /* Adjust score span styling for tablet */
   #score span {
     padding: 0;
     text-align: right;
   }
+
+  /* Remove border from the first child of the score on tablet */
+  #score > :first-child {
+    border-right: none;
+  }
+
+  /* Scale player 1 score for tablet and set text alignment */
   #player1-score {
     transform: scale(-1, -1);
     text-align: left !important;
