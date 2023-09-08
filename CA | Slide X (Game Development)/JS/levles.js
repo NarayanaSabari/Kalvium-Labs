@@ -95,3 +95,6 @@ if (window.innerWidth < 768) {
     localStorage.setItem("gameLevel", selectedLevelText);
   }
 }
+let background_music = new Audio("assets/bg.mp3");
+background_music.play();
+background_music.loop = true;

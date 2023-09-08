@@ -88,6 +88,7 @@ class Ball {
       // Check for paddle bounce
       if (paddleBounds.some((r) => isColliding(r, bounce))) {
         this.direction.y *= -1;
+        this.playPadSound();
       }
     } else {
       if (bounce.bottom >= window.innerHeight || bounce.top <= 0) {
@@ -97,10 +98,20 @@ class Ball {
       // Check for paddle bounce
       if (paddleBounds.some((r) => isColliding(r, bounce))) {
         this.direction.x *= -1;
+        this.playPadSound();
       }
     }
+
     // Check for vertical wall bounce
   }
+  playPadSound() {
+    const tapSound = document.getElementById("tapSound");
+    if (tapSound) {
+      tapSound.currentTime = 0; // Rewind to the beginning of the audio
+      tapSound.play();
+    }
+  }
+  playBounceSound() {}
 }
 
 // Function to check collision between two rectangles
@@ -224,6 +235,24 @@ const player2_score = document.getElementById("player2-score");
 // Create instances of the Paddle class for player 1 and player 2
 const player1Paddle = new Paddle(document.getElementById("player1-pad"), 50);
 const player2Paddle = new Paddle(document.getElementById("player2-pad"), 50);
+
+// background Music
+let background_music = new Audio("assets/bg.mp3");
+background_music.play();
+background_music.loop = true;
+
+// Create an audio element
+
+// Add an event listener for a user interaction, such as a click
+document.addEventListener("click", function () {
+  // Check if the audio is paused before playing (to avoid multiple playbacks)
+  if (background_music.paused) {
+    background_music.play();
+  }
+});
+
+// Set the loop attribute to loop the audio
+background_music.loop = true;
 
 // Event listener for paddle movement
 document.addEventListener("keydown", function (event) {

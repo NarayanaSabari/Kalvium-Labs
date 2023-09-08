@@ -2,7 +2,9 @@
 const playerDetailsForm = document.getElementById("player_details");
 const player1Section = document.getElementById("player1");
 const player2Section = document.getElementById("player2");
-
+let background_music = new Audio("assets/bg.mp3");
+background_music.play();
+background_music.loop = true;
 // Check if the window width is less than 768px
 if (window.innerWidth < 768) {
   // Hide the initial submit button

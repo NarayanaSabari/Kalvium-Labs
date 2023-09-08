@@ -13,3 +13,6 @@ document.getElementById("restart_btn").addEventListener("click", () => {
   window.location.href = "leves.html";
 });
 
+let background_music = new Audio("assets/bg.mp3");
+background_music.play();
+background_music.loop = true;

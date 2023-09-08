@@ -11,11 +11,13 @@ body {
 
 /* Styling for the pads */
 .pad {
-  position: absolute;
   height: 10vh;
   width: 1.5vh;
   transform: translate(0, -50%);
-  background-color: white;
+  background-color: #ffffff; /* White background for sliders */
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 10); /* Subtle box shadow */
 }
 
 /* Styling for player 1 pad */
@@ -41,6 +43,7 @@ body {
   top: calc(var(--y) * 1vh);
   transform: translate(-50%, -50%);
   background-color: white;
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 10);
 }
 
 /* Styling for individual boxes */

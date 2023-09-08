@@ -6,43 +6,54 @@
 
 /* Import Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 /* Reset Margin and Padding */
 * {
   margin: 0;
   padding: 0;
 }
+
 /* Body Styling */
 body {
-  background-color: black;
-}
-/* Color Coding */
-.text_bgcolor {
-  background-color: white;
-}
-.text_color {
-  color: black;
-}
-/* box color */
-.box_color {
-  background-color: white;
+  background-color: #f4f4f4; /* Light gray background color */
+  font-family: "Rubik", sans-serif; /* Use the Rubik font */
 }
 
-/* text color for the body bg color */
-.text_color_samebg {
-  color: white;
+/* Color Coding */
+.text_bgcolor {
+  background-color: #ffffff; /* White background for text */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
+
+.text_color {
+  color: #333333; /* Dark gray text color */
+}
+
+.box_color {
+  background-color: #ffffff; /* White background for boxes */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Text color for the body bg color */
+.text_color_samebg {
+  color: #333333; /* Dark gray text color for light backgrounds */
+}
+
 .border_color {
   border: 5px solid;
-  border-color: white;
+  border-color: #333333; /* Dark gray border color */
   border-radius: 30px;
 }
+
 /* Placeholder color */
 ::-webkit-input-placeholder {
-  color: gray;
+  color: #999999; /* Light gray placeholder text color */
   text-align: center;
 }
+
 /* Flex Utility Classes */
 .flex {
   display: flex;
@@ -51,14 +62,16 @@ body {
 .flex-center {
   justify-content: center;
 }
+
 /* Text align Classes */
 .text-cen {
   text-align: center;
 }
+
 /* Title Styling */
 #title {
   font-family: "ShadowHand";
-  color: white;
+  color: #4caf50; /* Attractive green title color */
   font-size: 130px;
   text-align: center;
   padding-top: 140px;
@@ -67,9 +80,10 @@ body {
 /* Slider Styling */
 .slider {
   padding: 60px 10px;
-  background-color: white;
+  background-color: #ffffff; /* White background for sliders */
   position: absolute;
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 10);
 }
 
 /* Left Slider Styling */
@@ -92,16 +106,25 @@ body {
 
 #start_btn,
 #restart_btn {
-  color: black;
-  background-color: white;
+  color: #ffffff; /* White text color */
+  background-color: #4caf50; /* Attractive green background color */
   font-size: 40px;
-  padding: 20px;
+  padding: 20px 40px; /* Increased padding for buttons */
   border-radius: 40px;
   font-family: "Yatra One", cursive;
+  cursor: pointer; /* Add cursor pointer on hover */
+  transition: background-color 0.2s ease; /* Smooth background color transition */
 }
+
+#start_btn:hover,
+#restart_btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
 #restart_btn {
   margin: 70px 0 70px;
 }
+
 /* For Tablet */
 @media screen and (max-width: 768px) {
   /* Title Styling */
@@ -109,6 +132,7 @@ body {
     font-size: 70px;
     padding-top: 140px;
   }
+
   /* Slider Styling */
   .slider {
     padding: 10px 60px;
@@ -125,11 +149,12 @@ body {
     top: 50px;
     right: 150px;
   }
+
   /* Start Button Styling */
   #start_btn,
   #restart_btn {
     font-size: 30px;
-    padding: 15px;
+    padding: 15px 30px; /* Adjusted padding for smaller screens */
   }
 }
 
