@@ -24,7 +24,7 @@
 /* For Tablet */
 @media screen and (max-width: 768px) {
   #collector {
-    padding: 10px 30px;
+    padding: 10px 0;
     margin: 70px 0 70px;
   }
 }

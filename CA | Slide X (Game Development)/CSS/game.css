@@ -111,13 +111,13 @@ body {
   /* Styling for player 1 pad on tablet */
   #player1-pad {
     top: 10vh; /* Initial position for player 1 paddle */
-    left: 50vw;
+    left: 100%;
   }
 
   /* Styling for player 2 pad on tablet */
   #player2-pad {
     top: 90vh; /* Initial position for player 2 paddle */
-    left: 50vw;
+    left: 50%;
   }
 
   /* Adjust game container styling for tablet */
@@ -129,7 +129,7 @@ body {
 
   /* Adjust body styling for tablet */
   body {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
 
