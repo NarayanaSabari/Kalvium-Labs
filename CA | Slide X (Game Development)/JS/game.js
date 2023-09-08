@@ -5,13 +5,13 @@ const player1_Name = localStorage.getItem("player1_name");
 const player2_Name = localStorage.getItem("player2_name");
 const gameLevel = localStorage.getItem("gameLevel");
 if (gameLevel == "Easy") {
-  INITIAL_VELOCITY = 0.055;
+  INITIAL_VELOCITY = 0.045;
   PADDLE_SPEED = 6;
 } else if (gameLevel == "Medium") {
-  INITIAL_VELOCITY = 0.075;
+  INITIAL_VELOCITY = 0.065;
   PADDLE_SPEED = 7;
 } else if (gameLevel == "Hard") {
-  INITIAL_VELOCITY = 0.095;
+  INITIAL_VELOCITY = 0.085;
   PADDLE_SPEED = 8;
 }
 // Ball class
