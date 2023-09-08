@@ -64,6 +64,7 @@ if (window.innerWidth < 768) {
       window.location.href = "leves.html";
     });
 } else {
+  document.querySelector(".next").style.display = "none";
   // Add a submit event listener to the form for larger screens
   playerDetailsForm.addEventListener("submit", function (e) {
     e.preventDefault();
