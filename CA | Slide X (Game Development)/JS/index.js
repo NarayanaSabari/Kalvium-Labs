@@ -18,7 +18,7 @@
 // });
 import { themeUpdate, themeSelector } from "./style.js";
 
-const themeName = ["Dark Retro", "Blue Knight", "Green Angle"];
+const themeName = ["Dark Retro", "Blue Knight", "Green Angel"];
 
 export function themeNameUpdate(id) {
   const themeNameBox = document.querySelector("#theam_box > h2"); // Corrected the typo in the selector
