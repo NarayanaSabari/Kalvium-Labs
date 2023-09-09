@@ -7,10 +7,13 @@ export function themeUpdate(themeID) {
   document.head.appendChild(newStyleElement);
 }
 let style;
-if (localStorage.getItem("themeID")) {
-  style = parseInt(localStorage.getItem("themeID"));
-} else {
+// style = 1;
+if (localStorage.getItem("themeID") == undefined) {
   style = 1;
+  localStorage.setItem("themeID", style);
+} else {
+  //   localStorage.clearItem("themeID");
+  style = parseInt(localStorage.getItem("themeID"));
 }
 
 export function themeSelector() {
@@ -39,6 +42,7 @@ export function themeSelector() {
       localStorage.setItem("themeID", style);
       themeUpdate(style);
     });
+  return style;
 }
 
 const Theam = [
@@ -57,6 +61,9 @@ const Theam = [
       margin: 0;
       padding: 0;
     }
+    #theam_box > h2 {
+        color : white;
+      }
     /* Body Styling */
     body {
       background-color: black;
@@ -196,7 +203,9 @@ const Theam = [
       margin: 0;
       padding: 0;
     }
-    
+    #theam_box > h2 {
+        color : white;
+      }
     /* Body Styling */
     body {
       background-color: #1e1e1e; /* Dark background color */
@@ -342,10 +351,12 @@ const Theam = [
     margin: 0;
     padding: 0;
   }
-  
+  #theam_box > h2 {
+    color : black;
+  }
   /* Body Styling */
   body {
-    background-color: #f4f4f4; /* Light gray background color */
+    background-color: #f4f4f4; /* ;Light gray background color */
     font-family: "Rubik", sans-serif; /* Use the Rubik font */
   }
   
