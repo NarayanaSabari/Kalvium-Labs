@@ -1,6 +1,8 @@
 /* Set body overflow to hidden to prevent scrolling */
 body {
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Styling for the container of boxes */
