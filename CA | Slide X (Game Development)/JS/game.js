@@ -1,3 +1,6 @@
+// Settingup the selected theme
+import { themeUpdate } from "./style.js";
+themeUpdate(localStorage.getItem("themeID"));
 // Constants
 let INITIAL_VELOCITY;
 let PADDLE_SPEED;

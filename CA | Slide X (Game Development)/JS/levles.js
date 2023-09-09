@@ -1,3 +1,6 @@
+// Settingup the selected theme
+import { themeUpdate } from "./style.js";
+themeUpdate(localStorage.getItem("themeID"));
 // Check if the window width is less than 768 pixels (mobile view)
 if (window.innerWidth < 768) {
   // Hide the game point input and submit button initially

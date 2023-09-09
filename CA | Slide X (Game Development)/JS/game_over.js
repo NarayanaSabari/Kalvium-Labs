@@ -1,3 +1,7 @@
+// Settingup the selected theme
+import { themeUpdate } from "./style.js";
+themeUpdate(localStorage.getItem("themeID"));
+
 // Get the winner from local storage
 const winner = localStorage.getItem("Winner");
 

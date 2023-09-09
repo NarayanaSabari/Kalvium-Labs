@@ -1,3 +1,6 @@
+// Settingup the selected theme
+import { themeUpdate } from "./style.js";
+themeUpdate(localStorage.getItem("themeID"));
 // Get references to the form and player sections
 const playerDetailsForm = document.getElementById("player_details");
 const player1Section = document.getElementById("player1");
