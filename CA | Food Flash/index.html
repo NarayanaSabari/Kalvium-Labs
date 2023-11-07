@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <div id="content">
+        <div id="logo">Food Flash</div>
+        <div id="discription">
+          Your daily dose of culinary surprise. Spin for a new random recipe
+          every day and discover the joy of unexpected flavors. Join us for a
+          delicious adventure in every dish.
+        </div>
+        <div id="search">
+          <input id="input_field" type="text" placeholder="Search" />
+          <i id="search_icons" class="material-icons">search</i>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="header">Recipe of the Day: A Surprise Dish</div>
+      <div id="dayFood"></div>
+      <div id="search_result"></div>
+    </div>
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright w3-padding-large"
+            >&times;</span
+          >
+          <h2>Required ingredients</h2>
+        </header>
+        <div id="ingredients" class="w3-container"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
